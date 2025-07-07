@@ -1,0 +1,303 @@
+/* 1. Reset or Normalize Styles */
+/* Include a CSS reset or normalize styles to ensure consistency across browsers */
+
+/* 2. Global Styles */
+/* Define global styles for body, headings, links, etc. */
+body {
+    margin: 0;
+    background-color: #f4f4f4; /* Light gray for the main site */
+    color: #333;
+}
+
+/* 3. Typography */
+/* Define font sizes, line heights, and text styles */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: normal;
+}
+
+.boldonse-regular {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .cal-sans-regular {
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+/* 4. Layout */
+/* Define styles for layout elements like containers, grids, and sections */
+
+/* Header */
+header {
+    background-color: #fff; /* White background for minimalism */
+    border-bottom: 1px solid #e0e0e0; /* Subtle border for separation */
+    padding: 10px 0; /* Add vertical padding */
+    font-family: "Boldonse", system-ui; /* Use your existing font */
+}
+
+.header-container {
+    max-width: 1200px; /* Limit the width of the header */
+    margin: 0 auto; /* Center the header content */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the logo and nav links */
+    align-items: center; /* Vertically align items */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+/* Logo */
+header img {
+    width: 120px; /* Adjust the logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation Links */
+.nav-links ul {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Use flexbox for horizontal layout */
+    gap: 20px; /* Add spacing between links */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Dark gray for minimalism */
+    font-size: 16px; /* Adjust font size */
+    font-weight: 800; /* Medium weight for readability */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-links a:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+/* Main Content Area */
+
+.about-section {
+    max-width: 800px; /* Limit the width of the section */
+    margin: 20px auto; /* Center the section */
+    text-align: center;
+    color: #333; /* Dark gray for text */
+}
+
+.about-section a {
+    font-family: "Boldonse", system-ui; /* Use your existing font */
+    font-size: 24px; /* Adjust font size for headings */
+    color: #333; /* Dark gray for headings */
+    text-decoration: none; /* Remove underline */
+}
+
+.about-section h1 {
+    font-family: Cal Sans;
+    font-size: 36px; /* Adjust font size for headings */
+}
+
+.about-section h1:hover {
+    color: #007bff; 
+    transition: color 0.3s ease;
+}
+
+.about-section p {
+    font-family: Cal Sans;
+    font-size: 18px; /* Adjust font size for paragraphs */
+    line-height: 1.6; /* Increase line height for readability */
+    margin: 10px 0; /* Add vertical spacing */
+}
+
+
+/* Skills Section */
+.skills-section {
+    font-family: Cal Sans;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px; /* Add top margin */
+}
+.skills-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items */
+    align-items: center;
+    flex-direction: row; 
+    height: 250px;
+}
+
+.skill-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    margin: 16px;
+    width: 160px;
+    height: 180px; /* Slightly taller for vertical centering */
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* Center horizontally */
+    justify-content: center;  /* Center vertically */
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    padding: 0 20px;
+    gap: 10px;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+}
+
+.skill-card i {
+    font-size: 56px;
+    margin-bottom: 18px; /* Space between icon and heading */
+    color: #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-card h4 {
+    font-family: "Cal Sans", sans-serif;
+    font-size: 22px;
+    color: #333;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Projects Section */
+.projects-section {
+    font-family: Cal Sans;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px;
+}
+.projects-container {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Add spacing between items */
+    padding: 20px; /* Add padding around the container */
+}
+.project-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    padding: 5px;
+    
+}
+.project-card img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 12px 12px 0 0; /* Round top corners */
+    opacity: 0.7; /* Slightly transparent for a modern look */
+}
+.project-card h3 {
+    text-decoration: none;
+}
+.project-card h3:hover {
+    color: #007bff; 
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+.project-card p {
+    font-family: Cal Sans;
+    font-size: 18px; /* Adjust font size for paragraphs */
+    line-height: 1.6; /* Increase line height for readability */
+    margin: 10px 0; /* Add vertical spacing */
+}
+
+.project-card a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Contact Section */
+.contact-section {
+    font-family: Cal Sans;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    max-width: 650px; /* Limit the width of the form */
+    margin: 20px auto 0px auto; /* Center the form */
+    padding: 20px; /* Add padding */
+    background-color: #fff; /* White background for the form */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 15px; /* Add spacing between form elements */
+    font-family: Cal Sans;
+    text-align: center;
+}
+
+input, textarea {
+    width: 600px;
+    padding: 10px; /* Add padding */
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Font size for inputs */
+    font-family: Cal Sans;
+    margin: 0 auto; /* Center inputs */
+}
+
+/* Footer */
+footer {
+    font-family: Boldonse, system-ui;
+    text-align: center;
+    padding: 20px 0; /* Add vertical padding */
+}
+.social-links {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the links */
+    gap: 15px; /* Add spacing between links */
+    margin-top: 10px; /* Add top margin */
+}
+/* 5. Components */
+/* Style reusable components like buttons, cards, modals, etc. */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* 6. Utilities */
+/* Add utility classes for margins, padding, text alignment, etc. */
+.mt-1 {
+    margin-top: 10px;
+}
+.text-center {
+    text-align: center;
+}
+
+/* 7. Media Queries */
+/* Add responsive styles for different screen sizes */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .header-container {
+        flex-direction: column; /* Stack logo and nav links vertically */
+        align-items: center; /* Center-align items */
+    }
+
+    .nav-links ul {
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px; /* Reduce spacing between links */
+    }
+
+    .skills-container {
+        flex-direction: column; /* Stack skill cards vertically */
+        align-items: center; /* Center-align skill cards */
+    }
+}
